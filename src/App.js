@@ -6,7 +6,6 @@ import TodoPage from './TodoPage.js';
 import {BrowserRouter as Router} from 'react-router-dom';
 import {Route} from 'react-router-dom';
 import {Link} from 'react-router-dom';
-import {Redirect} from 'react-router-dom';
 import {token$, updateToken} from './store.js';
 import jwt from 'jsonwebtoken';
 

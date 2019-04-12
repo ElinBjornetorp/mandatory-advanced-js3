@@ -1,8 +1,5 @@
 
 import React, { Component } from 'react';
-import RegisterButton from './App.js';
-import LoginButton from './App.js';
-import LogoutButton from './App.js';
 import ErrorMessage from './App.js';
 import API_ROOT from './App.js';
 import axios from 'axios';

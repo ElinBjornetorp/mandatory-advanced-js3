@@ -12,3 +12,54 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* My CSS code */
+
+body {
+  background-color: #F3E5F5;
+}
+
+header {
+  text-align: center;
+}
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 1%;
+  }
+
+button {
+  margin-top: 10px;
+  margin-left: 10px;
+  border: 1px solid #8E24AA;
+  border-radius: 10px;
+  padding: 0.7em;
+  background-color: #CE93D8;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delete-button {
+  border-radius: 5px;
+  padding: 1px;
+  width: 25px;
+  height: 25px;
+}
+
+.delete-button i {
+  font-size: 20px;
+}
+
+.todos {
+  margin-top: 30px;
+}

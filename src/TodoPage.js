@@ -1,16 +1,9 @@
 
 import React, { Component } from 'react';
-import RegisterButton from './App.js';
-import LoginButton from './App.js';
-import LogoutButton from './App.js';
 import ErrorMessage from './App.js';
-import jwt from 'jsonwebtoken';
 import {Redirect} from 'react-router-dom';
-import {token$, updateToken} from './store.js';
+import {token$} from './store.js';
 import axios from 'axios';
-import API_ROOT from './App.js';
-
-let id;
 
 class TodoPage extends Component {
   constructor(props) {
@@ -33,6 +26,7 @@ class TodoPage extends Component {
       this.setState({token});
     });
 
+    //Fetching todos from server
     this.makeGetRequest();
   }
 
@@ -149,7 +143,7 @@ class ListItem extends Component {
     return(
       <li>
         {this.props.todo}
-        <button id={this.props.id} onClick={this.props.onClickDeleteTodo}>
+        <button className="delete-button" id={this.props.id} onClick={this.props.onClickDeleteTodo}>
           <i className="material-icons" id={this.props.id}>close</i>
         </button>
       </li>
